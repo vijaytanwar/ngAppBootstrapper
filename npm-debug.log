@@ -1,0 +1,288 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-cache-bust' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json CustomNgFramework@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-cache-bust', null ]
+7 verbose cache add name=undefined spec="grunt-cache-bust" args=["grunt-cache-bust",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-cache-bust',
+8 verbose parsed url   path: 'grunt-cache-bust',
+8 verbose parsed url   href: 'grunt-cache-bust' }
+9 silly lockFile 9351da4c-grunt-cache-bust grunt-cache-bust
+10 verbose lock grunt-cache-bust /Users/Vijay.Tamar/.npm/9351da4c-grunt-cache-bust.lock
+11 silly lockFile 9351da4c-grunt-cache-bust grunt-cache-bust
+12 silly lockFile 9351da4c-grunt-cache-bust grunt-cache-bust
+13 verbose addNamed [ 'grunt-cache-bust', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile dc637c11-grunt-cache-bust grunt-cache-bust@
+16 verbose lock grunt-cache-bust@ /Users/Vijay.Tamar/.npm/dc637c11-grunt-cache-bust.lock
+17 silly addNameRange { name: 'grunt-cache-bust', range: '*', hasData: false }
+18 verbose request where is /grunt-cache-bust
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 63ae2280d2f1b468
+21 verbose url raw /grunt-cache-bust
+22 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cache-bust' ]
+23 verbose url resolved https://registry.npmjs.org/grunt-cache-bust
+24 verbose request where is https://registry.npmjs.org/grunt-cache-bust
+25 info trying registry request attempt 1 at 17:42:23
+26 verbose etag "54FXPDG5ROTE6N459D7C1SMPV"
+27 http GET https://registry.npmjs.org/grunt-cache-bust
+28 http 304 https://registry.npmjs.org/grunt-cache-bust
+29 silly registry.get cb [ 304,
+29 silly registry.get   { date: 'Tue, 12 Apr 2016 12:09:22 GMT',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     'cache-control': 'max-age=300',
+29 silly registry.get     etag: '"54FXPDG5ROTE6N459D7C1SMPV"',
+29 silly registry.get     age: '0',
+29 silly registry.get     connection: 'keep-alive',
+29 silly registry.get     'x-served-by': 'cache-sin6920-SIN',
+29 silly registry.get     'x-cache': 'HIT',
+29 silly registry.get     'x-cache-hits': '1',
+29 silly registry.get     'x-timer': 'S1460462962.499129,VS0,VE857',
+29 silly registry.get     vary: 'Accept-Encoding' } ]
+30 verbose etag https://registry.npmjs.org/grunt-cache-bust from cache
+31 silly addNameRange number 2 { name: 'grunt-cache-bust', range: '*', hasData: true }
+32 silly addNameRange versions [ 'grunt-cache-bust',
+32 silly addNameRange   [ '0.0.1',
+32 silly addNameRange     '0.0.2',
+32 silly addNameRange     '0.0.3',
+32 silly addNameRange     '0.0.4',
+32 silly addNameRange     '0.0.5',
+32 silly addNameRange     '0.0.6',
+32 silly addNameRange     '0.0.7',
+32 silly addNameRange     '0.0.8',
+32 silly addNameRange     '0.0.9',
+32 silly addNameRange     '0.0.10',
+32 silly addNameRange     '0.1.0',
+32 silly addNameRange     '0.1.1',
+32 silly addNameRange     '0.2.0',
+32 silly addNameRange     '0.3.0',
+32 silly addNameRange     '0.3.1',
+32 silly addNameRange     '0.3.2',
+32 silly addNameRange     '0.3.3',
+32 silly addNameRange     '0.3.4',
+32 silly addNameRange     '0.3.5',
+32 silly addNameRange     '0.3.6',
+32 silly addNameRange     '0.3.9',
+32 silly addNameRange     '0.4.0',
+32 silly addNameRange     '0.4.1',
+32 silly addNameRange     '0.4.2',
+32 silly addNameRange     '0.4.3',
+32 silly addNameRange     '0.4.4',
+32 silly addNameRange     '0.4.5',
+32 silly addNameRange     '0.4.6',
+32 silly addNameRange     '0.4.7',
+32 silly addNameRange     '0.4.8',
+32 silly addNameRange     '0.4.9',
+32 silly addNameRange     '0.4.10',
+32 silly addNameRange     '0.4.11',
+32 silly addNameRange     '0.4.12',
+32 silly addNameRange     '0.4.13',
+32 silly addNameRange     '0.5.0',
+32 silly addNameRange     '0.5.1',
+32 silly addNameRange     '0.6.0',
+32 silly addNameRange     '0.6.1',
+32 silly addNameRange     '1.0.0-rc',
+32 silly addNameRange     '1.0.1-rc',
+32 silly addNameRange     '1.0.0',
+32 silly addNameRange     '1.1.0',
+32 silly addNameRange     '1.1.1',
+32 silly addNameRange     '1.2.0',
+32 silly addNameRange     '1.3.0' ] ]
+33 verbose addNamed [ 'grunt-cache-bust', '1.3.0' ]
+34 verbose addNamed [ '1.3.0', '1.3.0' ]
+35 silly lockFile c9a9a0a0-grunt-cache-bust-1-3-0 grunt-cache-bust@1.3.0
+36 verbose lock grunt-cache-bust@1.3.0 /Users/Vijay.Tamar/.npm/c9a9a0a0-grunt-cache-bust-1-3-0.lock
+37 silly lockFile c9a9a0a0-grunt-cache-bust-1-3-0 grunt-cache-bust@1.3.0
+38 silly lockFile c9a9a0a0-grunt-cache-bust-1-3-0 grunt-cache-bust@1.3.0
+39 silly lockFile dc637c11-grunt-cache-bust grunt-cache-bust@
+40 silly lockFile dc637c11-grunt-cache-bust grunt-cache-bust@
+41 silly resolved [ { name: 'grunt-cache-bust',
+41 silly resolved     description: 'Bust static assets from the cache using content hashing',
+41 silly resolved     version: '1.3.0',
+41 silly resolved     author: { name: 'Ben Holland', email: 'hi@benholland.me' },
+41 silly resolved     repository:
+41 silly resolved      { type: 'git',
+41 silly resolved        url: 'git://github.com/hollandben/grunt-cache-bust.git' },
+41 silly resolved     licenses: [ [Object] ],
+41 silly resolved     engines: { node: '>=0.10.0' },
+41 silly resolved     scripts: { test: 'grunt test' },
+41 silly resolved     devDependencies:
+41 silly resolved      { grunt: '^1.0.1',
+41 silly resolved        'grunt-contrib-clean': '^1.0.0',
+41 silly resolved        'grunt-contrib-copy': '^1.0.0',
+41 silly resolved        'grunt-contrib-jshint': '^1.0.0',
+41 silly resolved        'grunt-contrib-nodeunit': '^1.0.0',
+41 silly resolved        'grunt-contrib-watch': '^1.0.0' },
+41 silly resolved     peerDependencies: { grunt: '>=0.4.0' },
+41 silly resolved     keywords: [ 'grunt', 'grunt plugin', 'cache', 'bust', 'bust assets' ],
+41 silly resolved     gitHead: '119484400905eab87211f3630b0ff359f02bec4c',
+41 silly resolved     bugs: { url: 'https://github.com/hollandben/grunt-cache-bust/issues' },
+41 silly resolved     homepage: 'https://github.com/hollandben/grunt-cache-bust#readme',
+41 silly resolved     _id: 'grunt-cache-bust@1.3.0',
+41 silly resolved     _shasum: '62d9208e2315f1c20c16083a907ce4abc249bf54',
+41 silly resolved     _from: 'grunt-cache-bust@',
+41 silly resolved     _npmVersion: '3.6.0',
+41 silly resolved     _nodeVersion: '5.7.1',
+41 silly resolved     _npmUser: { name: 'hollandben', email: 'hi@benholland.me' },
+41 silly resolved     dist:
+41 silly resolved      { shasum: '62d9208e2315f1c20c16083a907ce4abc249bf54',
+41 silly resolved        tarball: 'https://registry.npmjs.org/grunt-cache-bust/-/grunt-cache-bust-1.3.0.tgz' },
+41 silly resolved     maintainers: [ [Object] ],
+41 silly resolved     _npmOperationalInternal:
+41 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+41 silly resolved        tmp: 'tmp/grunt-cache-bust-1.3.0.tgz_1459952649090_0.86676230491139' },
+41 silly resolved     directories: {},
+41 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-cache-bust/-/grunt-cache-bust-1.3.0.tgz',
+41 silly resolved     readme: 'ERROR: No README data found!' } ]
+42 info install grunt-cache-bust@1.3.0 into /Users/Vijay.Tamar/Documents/RND/CustomFramework
+43 info installOne grunt-cache-bust@1.3.0
+44 verbose node_modules/grunt-cache-bust unbuild
+45 verbose tar unpack /Users/Vijay.Tamar/.npm/grunt-cache-bust/1.3.0/package.tgz
+46 silly lockFile 4632dcfb-rk-node-modules-grunt-cache-bust tar:///Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust
+47 verbose lock tar:///Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust /Users/Vijay.Tamar/.npm/4632dcfb-rk-node-modules-grunt-cache-bust.lock
+48 silly lockFile 2aae7280-unt-cache-bust-1-3-0-package-tgz tar:///Users/Vijay.Tamar/.npm/grunt-cache-bust/1.3.0/package.tgz
+49 verbose lock tar:///Users/Vijay.Tamar/.npm/grunt-cache-bust/1.3.0/package.tgz /Users/Vijay.Tamar/.npm/2aae7280-unt-cache-bust-1-3-0-package-tgz.lock
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm extractEntry .npmignore
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm extractEntry Gruntfile.js
+55 silly gunzTarPerm extractEntry changelog.md
+56 silly gunzTarPerm extractEntry .editorconfig
+57 silly gunzTarPerm extractEntry LICENSE-MIT
+58 silly gunzTarPerm extractEntry .jshintrc
+59 silly gunzTarPerm extractEntry config/complex.js
+60 silly gunzTarPerm extractEntry config/deleteOriginals.js
+61 silly gunzTarPerm extractEntry config/hash.js
+62 silly gunzTarPerm extractEntry config/ignorePattern.js
+63 silly gunzTarPerm extractEntry config/jsonOutput.js
+64 silly gunzTarPerm extractEntry config/createCopies.js
+65 silly gunzTarPerm extractEntry config/scripts.js
+66 silly gunzTarPerm extractEntry config/standard.js
+67 silly gunzTarPerm extractEntry config/stylesheets.js
+68 silly gunzTarPerm extractEntry config/templates.js
+69 silly gunzTarPerm extractEntry config/xml.js
+70 silly gunzTarPerm extractEntry config/queryString.js
+71 silly gunzTarPerm extractEntry license
+72 silly gunzTarPerm extractEntry tests/queryString/queryString_test.js
+73 silly gunzTarPerm extractEntry tests/queryString/css/test.css
+74 silly gunzTarPerm extractEntry tests/queryString/imgs/background.jpg
+75 silly gunzTarPerm extractEntry tests/queryString/queryString.html
+76 silly gunzTarPerm extractEntry tests/complex/complex_test.js
+77 silly gunzTarPerm extractEntry tests/complex/complex.html
+78 silly gunzTarPerm extractEntry tests/complex/css/complex.css
+79 silly gunzTarPerm extractEntry tests/complex/imgs/complex-background.jpg
+80 silly gunzTarPerm extractEntry tests/deleteOriginals/assets/delete.js
+81 silly gunzTarPerm extractEntry tests/deleteOriginals/assets/delete.css
+82 silly gunzTarPerm extractEntry tests/deleteOriginals/assets/delete.png
+83 silly gunzTarPerm extractEntry tests/deleteOriginals/deleteOriginalSameAssets.html
+84 silly gunzTarPerm extractEntry tests/deleteOriginals/deleteOriginals.html
+85 silly gunzTarPerm extractEntry tests/hash/hash_test.js
+86 silly gunzTarPerm extractEntry tests/hash/assets/hash.js
+87 silly gunzTarPerm extractEntry tests/hash/assets/hash.css
+88 silly gunzTarPerm extractEntry tests/hash/assets/hash.jpg
+89 silly gunzTarPerm extractEntry tests/hash/hash.html
+90 silly gunzTarPerm extractEntry tests/ignorePattern/ignorePattern_test.js
+91 silly gunzTarPerm extractEntry tests/ignorePattern/assets/toBeIgnoredJS.js
+92 silly gunzTarPerm extractEntry tests/ignorePattern/assets/toBeIgnoredCSS.css
+93 silly gunzTarPerm extractEntry tests/ignorePattern/assets/toBeIgnoredJPG.jpg
+94 silly gunzTarPerm extractEntry tests/ignorePattern/ignorePattern.html
+95 silly gunzTarPerm extractEntry tests/jsonOutput/jsonOutput_test.js
+96 silly gunzTarPerm extractEntry tests/jsonOutput/assets/jsonOutput.js
+97 silly gunzTarPerm extractEntry tests/jsonOutput/jsonOutput.html
+98 silly gunzTarPerm extractEntry tests/createCopies/assets/.htaccess
+99 silly gunzTarPerm extractEntry tests/createCopies/assets/dontCopy.png
+100 silly gunzTarPerm extractEntry tests/createCopies/createCopies.html
+101 silly gunzTarPerm extractEntry tests/scripts/scripts.js
+102 silly gunzTarPerm extractEntry tests/scripts/scripts_test.js
+103 silly gunzTarPerm extractEntry tests/scripts/assets/script.js
+104 silly gunzTarPerm extractEntry tests/standard/standard_test.js
+105 silly gunzTarPerm extractEntry tests/standard/assets/standard.js
+106 silly gunzTarPerm extractEntry tests/standard/assets/standard-apple-touch-icon.jpg
+107 silly gunzTarPerm extractEntry tests/standard/assets/standard.css
+108 silly gunzTarPerm extractEntry tests/standard/assets/standard.jpg
+109 silly gunzTarPerm extractEntry tests/standard/standard.html
+110 silly gunzTarPerm extractEntry tests/standard/subfolder/relative-standard.html
+111 silly gunzTarPerm extractEntry tests/stylesheets/stylesheet_test.js
+112 silly gunzTarPerm extractEntry tests/stylesheets/assets/relative-css-image-quotes.jpg
+113 silly gunzTarPerm extractEntry tests/stylesheets/assets/css-image-large.jpg
+114 silly gunzTarPerm extractEntry tests/stylesheets/assets/css-image.jpg
+115 silly gunzTarPerm extractEntry tests/stylesheets/assets/fonts/icons.eot
+116 silly gunzTarPerm extractEntry tests/stylesheets/assets/fonts/icons.ttf
+117 silly gunzTarPerm extractEntry tests/stylesheets/assets/fonts/icons.woff
+118 silly gunzTarPerm extractEntry tests/stylesheets/assets/fonts/icons.woff2
+119 silly gunzTarPerm extractEntry tests/stylesheets/assets/image1.jpg
+120 silly gunzTarPerm extractEntry tests/stylesheets/assets/image2.jpg
+121 silly gunzTarPerm extractEntry tests/stylesheets/assets/relative-css-image-large.jpg
+122 silly gunzTarPerm extractEntry tests/stylesheets/assets/css-image-quotes.jpg
+123 silly gunzTarPerm extractEntry tests/stylesheets/assets/relative-css-image.jpg
+124 silly gunzTarPerm extractEntry tests/stylesheets/assets/relative-image1.jpg
+125 silly gunzTarPerm extractEntry tests/stylesheets/assets/stylesheet1.css
+126 silly gunzTarPerm extractEntry tests/stylesheets/assets/stylesheet2.css
+127 silly gunzTarPerm extractEntry tests/stylesheets/assets/stylesheet3.css
+128 silly gunzTarPerm extractEntry tests/stylesheets/assets/stylesheet4.css
+129 silly gunzTarPerm extractEntry tests/stylesheets/css/replaceCssInSubdir.css
+130 silly gunzTarPerm extractEntry tests/stylesheets/stylesheet.css
+131 silly gunzTarPerm extractEntry tests/templates/templates_test.js
+132 silly gunzTarPerm extractEntry tests/templates/base.html
+133 silly gunzTarPerm extractEntry tests/templates/views/view-a.html
+134 silly gunzTarPerm extractEntry tests/templates/views/view-b.html
+135 silly gunzTarPerm extractEntry tests/xml/xml_test.js
+136 silly gunzTarPerm extractEntry tests/xml/assets/mstile-150x150.png
+137 silly gunzTarPerm extractEntry tests/xml/assets/mstile-310x150.png
+138 silly gunzTarPerm extractEntry tests/xml/assets/mstile-310x310.png
+139 silly gunzTarPerm extractEntry tests/xml/assets/mstile-70x70.png
+140 silly gunzTarPerm extractEntry tests/xml/xml.xml
+141 silly gunzTarPerm extractEntry .travis.yml
+142 silly gunzTarPerm extractEntry tasks/cachebust.js
+143 silly lockFile 4632dcfb-rk-node-modules-grunt-cache-bust tar:///Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust
+144 silly lockFile 4632dcfb-rk-node-modules-grunt-cache-bust tar:///Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust
+145 silly lockFile 2aae7280-unt-cache-bust-1-3-0-package-tgz tar:///Users/Vijay.Tamar/.npm/grunt-cache-bust/1.3.0/package.tgz
+146 silly lockFile 2aae7280-unt-cache-bust-1-3-0-package-tgz tar:///Users/Vijay.Tamar/.npm/grunt-cache-bust/1.3.0/package.tgz
+147 info preinstall grunt-cache-bust@1.3.0
+148 verbose readDependencies using package.json deps
+149 verbose readDependencies using package.json deps
+150 silly resolved []
+151 verbose about to build /Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust
+152 info build /Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules/grunt-cache-bust
+153 verbose linkStuff [ false,
+153 verbose linkStuff   false,
+153 verbose linkStuff   false,
+153 verbose linkStuff   '/Users/Vijay.Tamar/Documents/RND/CustomFramework/node_modules' ]
+154 info linkStuff grunt-cache-bust@1.3.0
+155 verbose linkBins grunt-cache-bust@1.3.0
+156 verbose linkMans grunt-cache-bust@1.3.0
+157 verbose rebuildBundles grunt-cache-bust@1.3.0
+158 info install grunt-cache-bust@1.3.0
+159 info postinstall grunt-cache-bust@1.3.0
+160 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+160 error peerinvalid Peer grunt-cache-bust@1.3.0 wants grunt@>=0.4.0
+160 error peerinvalid Peer grunt-contrib-rename@0.0.3 wants grunt@~0.4.0
+160 error peerinvalid Peer grunt-preprocess@5.1.0 wants grunt@>=0.4.0
+160 error peerinvalid Peer grunt-contrib-concat@1.0.0 wants grunt@>=0.4.0
+160 error peerinvalid Peer grunt-cache-busting@0.0.11 wants grunt@~0.4.0
+160 error peerinvalid Peer grunt-contrib-sass@1.0.0 wants grunt@>=0.4.0
+160 error peerinvalid Peer grunt-contrib-clean@1.0.0 wants grunt@>= 0.4.5
+160 error peerinvalid Peer grunt-contrib-jshint@1.0.0 wants grunt@>=0.4.0
+160 error peerinvalid Peer grunt-html2js@0.3.5 wants grunt@~0.4.0
+161 error System Darwin 15.3.0
+162 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-cache-bust"
+163 error cwd /Users/Vijay.Tamar/Documents/RND/CustomFramework
+164 error node -v v0.10.33
+165 error npm -v 1.4.28
+166 error code EPEERINVALID
+167 verbose exit [ 1, true ]

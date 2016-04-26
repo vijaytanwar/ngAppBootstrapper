@@ -1,0 +1,28 @@
+{
+  "name": "CustomNgFramework",
+  "description": "Custom Ng Framework",
+  "main": "app.js",
+  "authors": [
+    "Tamarvijay@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "^1.5.3",
+    "angular-material": "^1.0.7",
+    "angular-ui-router": "^0.2.18",
+    "angular-mocks": "^1.5.3",
+    "Materialize": "^0.97.6"
+  },
+  "devDependencies": {
+    "angular-cookies": "^1.5.3"
+  }
+}
