@@ -3,6 +3,7 @@
 
 ### Quick links
 - [Demo](#demo)
+- [Features](#features)
 - [Depedenies](#dependencies)
 - [Installation](#installation)
     - [Manual](#manual-download)
@@ -18,9 +19,22 @@
 
 Do you want to see sample app writtne using this bootstrapper? Visit http://www.vijaytanwar.com/!
 
-# Angular 2
 
-Are you interested in Angular 2? We are on our way! Check out [ng-bootstrap](https://github.com/ui-bootstrap/core).
+# Features
+
+- Light weight application framework.
+- Using angular js as front end framework.
+- Using Material CSS as design framework.
+- Support mocking of real services using ngMock. It is very helpful, you even dont need any real service while developing your application, you can just intercept any url and return the suitable response. For more help see. (https://github.com/angular/angular.js/tree/master/src/ngMock)
+- Using lite server for viewing changes in real time when doing developent, it helps in reducing time in refreshing the browsers again and again after making a small changes.
+- It support cache busting for your own files, if you make any new production build, the client files replaced with new files when browser loads the application.
+- Template precompilation helps to precompile ng tempates at server to reduce the compilation time and loading time on client browser thus improve the application load time.
+- Load third party script from cdn server.
+- Using scss for modularizing the css files.
+- Development is faster as it don't keep watch on every file except scss files, so any change in js files is watch for only jslint specific issues only, they are not copied to dist folder every time they are changed.
+ 
+# dependencies
+
 
 # Installation
 
