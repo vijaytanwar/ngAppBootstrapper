@@ -51,6 +51,7 @@ Do you want to see sample app writtne using this bootstrapper? Visit http://www.
 
 # Installation
 
+# manual-download
 As for now you can checkout the code from git branch or you can download the code manully from git.
 
 ## Need help?
@@ -59,7 +60,7 @@ As for now you can checkout the code from git branch or you can download the cod
 **Please do not create new issues in this repository to ask questions about using ng app bootstrapper**
 
 ## Found a bug?
-Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/angular-ui/bootstrap/issues/new).
+Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/vijaytanwar/ngAppBootstrapper/issues).
 
 
 # Contributing to the project
