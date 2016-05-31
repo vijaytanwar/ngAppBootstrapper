@@ -19,10 +19,10 @@
     "angular-cookies": "^1.5.3",
     "angular-material": "^1.0.7",
     "angular-ui-router": "^0.2.18",
-    "angular-mocks": "^1.5.3",
-    "Materialize": "^0.97.6"
+    "angular-mocks": "^1.5.3"
   },
   "devDependencies": {
-    "angular-cookies": "^1.5.3"
+    "angular-cookies": "^1.5.3",
+    "Materialize": "materialize#^0.97.6"
   }
 }
