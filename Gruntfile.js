@@ -51,7 +51,7 @@ module.exports = function(grunt) {
    //
     clean:{
       dist: ['dist'],
-      tmp: ['tmp']
+      tmp: ['tmp', 'dist/index-dev.html']
     },
   
    //
@@ -65,6 +65,20 @@ module.exports = function(grunt) {
         files: {
           'index.html': 'dist/index-dev.html',
         }
+      },
+      rename:{
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'dist',
+          dest: 'dist/',
+          src: [
+            'index-dev.html'
+          ],
+          rename: function(dest, src) {
+            return dest + src.replace('-dev','');
+          }
+        }]
       },
       assets: {
         files: [
@@ -126,16 +140,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
-   //rename files
-   rename: {
-      main: {
-        files: [
-             {src: ['dist/index-dev.html'], dest: 'dist/index.html'},
-            ]
-      }
-    },
-
 
     // Precompile angular templates
     //
@@ -236,7 +240,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-rename');
   grunt.loadNpmTasks('grunt-cache-bust');
 
   grunt.registerTask('cc', ['jshint']);
@@ -247,7 +250,7 @@ module.exports = function(grunt) {
       'clean:dist', 
       'env:prod', 
       'preprocess:task1', 
-      'rename',
+      'copy:rename',
       'sass',
       'cssmin',
       'requirejs',
