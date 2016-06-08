@@ -3,12 +3,12 @@ define([
         'app/shared/constants/constants',
         'app/components/home/HomeController'
     ],function (
-        routes, 
-        constants,  
-        homeController
+        Routes, 
+        Constants,  
+        HomeController
     ) {
 
-        var moduleDepedency = ['ui.router', 'ngAnimate'];
+        var moduleDepedency = ['ngMaterial', 'ngAnimate', 'ngRoute'];
 
         if ( typeof DEBUG_ENVIROMENT === "undefined" ) {
             moduleDepedency.push('templates-main');
@@ -16,9 +16,9 @@ define([
             moduleDepedency.push('mockServiceModule');
         }       
         angular.module('ngAppBootsrapper', moduleDepedency)
-            .config(routes)
-            .constant("CONSTANTS", constants)
-            .controller("homeController", homeController);
+            .config(Routes)
+            .constant("Constant", Constants)
+            .controller("HomeController", HomeController);
 
         angular.bootstrap(angular.element(document.querySelector('#ngApp')), ['ngAppBootsrapper']);
 });

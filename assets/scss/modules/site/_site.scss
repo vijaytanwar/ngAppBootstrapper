@@ -1,0 +1,23 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
+body{
+	margin: 0px;
+}
+
+
+.ng-valid       { border-color: green;  }
+.ng-invalid     {  border-color: red;    }
+.ng-pristine    {  border-color: deepskyblue;   }
+.ng-dirty       {  border-color: black;   }
+.ng-touched     {  border-color: yellow;   }
+
+/* really specific css rules applied by angular */
+.ng-invalid-required        { border-color: red;   }
+.ng-invalid-minlength       { border-color: red;    }
+.ng-valid-max-length        { border-color: red;    }
+
+.site{
+	background-color: gray;
+}

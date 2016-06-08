@@ -1,15 +1,16 @@
 define(function () {
-    var routes = function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/Home');
-    
-    $stateProvider.state('Home', {
-        url: '/Home',
+    var routes = function ($routeProvider, $locationProvider) {
+
+    $routeProvider.
+      when('/home', {
         templateUrl: "app/components/home/Home.htm",
-        controller: "homeController",
-        data: {
-          requireLogin: true
-        }
+        controller: "HomeController"
+      }).
+      otherwise({
+        redirectTo: '/home'
       });
+
+      $locationProvider.html5Mode(false);
   };
-  return ['$stateProvider', '$urlRouterProvider',routes];
+  return ['$routeProvider', '$locationProvider', routes];
 });
