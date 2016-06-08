@@ -85,9 +85,18 @@ module.exports = function(grunt) {
           {expand: true, src: ['assets/fonts/*', 'assets/images/*' ], dest: 'dist/' },
         ],
       },
-     bower_components: {
+      bower_components: {
         files: [
-          { expand: true, src: ['bower_components/angular-material/angular-material.min.css'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular/angular.min.js'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular-material/angular-material.min.js'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular-messages/angular-messages.min.js'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular-animate/angular-animate.min.js'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular-aria/angular-aria.min.js'], dest: 'dist/' },
+            { expand: true, src: ['bower_components/angular-cookies/angular-cookies.min.js'], dest: 'dist/' },
+            { expand: true, src: ['node_modules/angular-route/angular-route.js'], dest: 'dist/' },
+            { expand: true, src: ['node_modules/jquery/dist/jquery.min.js'], dest: 'dist/' },
+            { expand: true, src: ['node_modules/requirejs/require.js'], dest: 'dist/' },
+            { expand: true, src: ['node_modules/hammerjs/hammer.min.js'], dest: 'dist/'}
         ],
       }
     },
@@ -118,7 +127,7 @@ module.exports = function(grunt) {
         },
         html: {
             files: ['index-dev.html'],
-            tasks: ['env:dev', 'preprocess:task1', 'copy:indexPage'],
+            tasks: ['env:dev', 'preprocess:task1', 'copy:indexPage','clean:dist'],
             options: {
               spawn: false,
           },
@@ -173,7 +182,7 @@ module.exports = function(grunt) {
           options: {
             baseUrl: ".",
             mainConfigFile: "app/main.js",
-            optimize: "uglify2",
+            optimize: "none",
             uglify2: {
               beautify: false,
               mangle: false
@@ -196,28 +205,19 @@ module.exports = function(grunt) {
       },
       prod: {
         src: [
-          'app/require.js',
-          'bower_components/angular/angular.min.js',
-          'bower_components/angular-cookies/angular-cookies.min.js',
-          'bower_components/angular-ui-router/release/angular-ui-router.min.js',
-          'bower_components/angular-animate/angular-animate.min.js',
-          'bower_components/angular-messages/angular-messages.min.js',
-          'bower_components/angular-aria/angular-aria.min.js',
-          'bower_components/angular-material/angular-material.min.js',
-          'node_modules/jquery/dist/jquery.min.js',
-
-          //Application files
           'tmp/main.min.js',
           'tmp/templates.js'
         ],
         dest: 'dist/app/main.min.js',
       },
     },
+     
+     //cache bust
      cacheBust: {
         taskName: {
             options: {
                 baseDir: './dist',
-                assets: ['**/*.js', '**/*.css'],
+                assets: ['app/*.js', 'assets/*.css'],
                 jsonOutput: false,                            // Output the original => new URLs to a JSON file
                 jsonOutputFilename: 'grunt-cache-bust.json',
                 queryString: false,
