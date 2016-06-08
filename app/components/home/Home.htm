@@ -1,3 +1,36 @@
-<div class="container">
-  <h1>Hello there!</h1>
+<div layout="row" layout-align="center center" class="home-container">
+  <div flex="60" flex-xs="90" class="home-container__registration">
+		<md-card>
+	        <md-card-title>
+	          <md-card-title-text>
+	            <span class="md-headline">Contact us:</span>
+	          </md-card-title-text>
+	        </md-card-title>
+	        <md-card-content>
+	           <md-content layout-md="row" layout-padding>
+				      <md-input-container class="md-block">
+				        <label>First Name</label>
+				        <input ng-model="user.FirstName">
+				      </md-input-container>
+
+				       <md-input-container class="md-block">
+				        <label>Last Name</label>
+				        <input ng-model="user.LastName">
+				      </md-input-container>
+
+
+				       <md-input-container class="md-block">
+				        <label>Email</label>
+				        <input ng-model="user.Email" type="email" required>
+				         <div ng-messages="user.Email.$error">
+				      	    <div ng-message="required">Email is required.</div>
+				        </div>
+				      </md-input-container>
+  				</md-content>
+	        </md-card-content>
+	        <md-card-actions layout="row" layout-align="end center">
+	          <md-button ng-click="submitForm()">Submit</md-button>
+	        </md-card-actions>
+      </md-card>
+  </div>
 </div>
