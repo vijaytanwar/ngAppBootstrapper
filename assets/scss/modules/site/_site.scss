@@ -21,3 +21,13 @@ body{
 .site{
 	background-color: gray;
 }
+
+.greenline{
+	background-color: $lite-green;
+	height:100vh;
+}
+.container{
+	padding:25px;
+	background-color: $dark-blue;
+	height:100vh;
+}

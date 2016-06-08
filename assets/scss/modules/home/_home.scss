@@ -1,1 +1,9 @@
 /* Home Modules */
+
+.home-container{
+	height:100%;
+
+	&__registration{
+		height:500px;
+	}
+}
