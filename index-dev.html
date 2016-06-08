@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<base href="/">
 		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		
 		 <!--Let browser know website is optimized for mobile-->
       	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-
+ 
 		<meta name="description" content="ng app bootstrapper to bootstarp the front end application using best of front end technologies." />
 		<title>ng app bootstrapper</title>
 		
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 		<!-- @if NODE_ENV == 'DEVELOPMENT' -->
 		<link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
-		<link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
 		
 		<link href="assets/styles/main.css" rel="stylesheet">
 		<!-- @endif -->
 		<!-- @if NODE_ENV == 'PRODUCTION' -->
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 		<link href="assets/styles/main.min.css" rel="stylesheet">
 		<!-- @endif -->
 	</head>
-	<body id="ngApp" ng-cloak>
-		<div class="row site-container">
-			<div class="col m2 s1" sidebar-directive>
-			</div>
-			<div class="col m10 s12 main-content push-m2">
-				<div class="row">
-					<div class="col m12 s12 nav-header" nav-header-directive>
-					</div>
-				</div>
-				<div class="row">
-						<div ui-view class="col m12 s12"></div>
-				</div>
+	<body id="ngApp" ng-cloak class="site">
+		<div layout="row">
+			<div flex="90">
+				<div ng-view class="view-animate" style="background-color:green;"></div>
 			</div>
 		</div>
 		
 		<!-- @if NODE_ENV == 'DEVELOPMENT' -->
 		<script>
 			var DEBUG_ENVIROMENT = true,
-			API_URL = '/api';
+			API_URL = '/api'; 
 		</script>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/angular/angular.min.js"></script>
-		<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
-		<script src="bower_components/angular-messages/angular-messages.min.js"></script>
-		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-		<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-		<script src="bower_components/angular-aria/angular-aria.min.js"></script>
-		<script src="bower_components/angular-material/angular-material.min.js"></script>
-		<script src="bower_components/Materialize/dist/js/materialize.js"></script>
-		<script src="bower_components/angular-mocks/angular-mocks.js"></script>
-		<script data-main="app/main" src="app/require.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+		<script data-main="app/main" src="node_modules/requirejs/require.js"></script>
 		<!-- @endif -->
+		
+
 		<!-- @if NODE_ENV == 'PRODUCTION' -->
 		<script>
 				var API_URL = 'http://localhost:8123/api';
 		</script>
+		<!--jQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+		<script>
+		if (typeof jQuery == 'undefined') {
+		    document.write(unescape("%3Cscript src='node_modules/jquery/dist/jquery.min.js' %3E%3C/script%3E"));
+		}
+		</script>
+
+		<!--angular js-->
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
+		<script>
+		if (typeof jQuery == 'undefined') {
+		    document.write(unescape("%3Cscript src='bower_components/angular/angular.min.js' %3E%3C/script%3E"));
+		}
+		</script>
+
+		<!--requirejs-->
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
+		<script>
+		if (typeof jQuery == 'undefined') {
+		    document.write(unescape("%3Cscript src='node_modules/requirejs/require.js' %3E%3C/script%3E"));
+		}
+		</script>
+
 		<script src="app/main.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 		<!-- @endif -->
 	</body>
 </html>
